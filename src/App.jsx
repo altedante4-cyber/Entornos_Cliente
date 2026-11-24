@@ -2,6 +2,8 @@ import { useState } from 'react'
 import FormularioTarea from './components/FormularioTarea.jsx'
 import ListaTareas from './components/ListaTareas.jsx'
 import Contador from './components/Contador.jsx'
+import { BrowserRouter, Link, Route ,Routes } from 'react-router-dom'
+import EliminarTarea  from './components/EliminarTarea.jsx'
 import './App.css'
 
 // Datos de ejemplo con los que arranca la aplicación
@@ -11,10 +13,8 @@ const TAREAS_INICIALES = [
 ]
 
 function App() {
-  // 👇 TODO el estado de la aplicación vive aquí
   const [tareas, setTareas] = useState(TAREAS_INICIALES)
 
-  // Añade una tarea nueva al final del array
   const agregarTarea = (texto) => {
     const textoLimpio = texto.trim()
     if (textoLimpio === '') return
@@ -25,12 +25,10 @@ function App() {
     ])
   }
 
-  // Elimina la tarea cuyo id coincide
   const eliminarTarea = (id) => {
     setTareas((tareasActuales) => tareasActuales.filter((tarea) => tarea.id !== id))
   }
 
-  // Invierte el valor de "completada" de la tarea indicada
   const toggleCompletada = (id) => {
     setTareas((tareasActuales) =>
       tareasActuales.map((tarea) =>
@@ -40,24 +38,36 @@ function App() {
   }
 
   return (
-    <main className="app">
+
+      <BrowserRouter>
+   <main className="app">
       <header className="app__cabecera">
         <h1>Lista de tareas</h1>
         <p>
           Estado centralizado en <code>App.jsx</code> y repartido a los hijos mediante props.
         </p>
       </header>
-
-      <FormularioTarea agregarTarea={agregarTarea} />
-
-      <Contador tareas={tareas} />
-
-      <ListaTareas
+      <Link to="/formulario">Ver Formulario</Link>
+      <Link to="/contador">Ver Contador</Link>
+      <Link to="/tareas">Ver Tareas</Link>
+      <Link to="/eliminar">Eliminar un producto</Link>
+      </main>
+        <Routes>  
+          <Route path='/tareas' element={ <ListaTareas
         tareas={tareas}
         eliminarTarea={eliminarTarea}
-        toggleCompletada={toggleCompletada}
-      />
-    </main>
+        toggleCompletada={toggleCompletada}/>}></Route>
+
+            <Route path='/formulario' element={<FormularioTarea agregarTarea={agregarTarea} />}></Route>
+            <Route path='/contador' element={ <Contador tareas={tareas} />}></Route>
+            <Route path='/eliminar' element={<EliminarTarea tareas={tareas} eliminartarea={eliminarTarea}></EliminarTarea>}></Route>
+            <Route path="/eliminar/:id" element={ <ListaTareas
+        tareas={tareas}
+        eliminarTarea={eliminarTarea}
+        toggleCompletada={toggleCompletada}/>}></Route>
+        </Routes>
+       </BrowserRouter>
+   
   )
 }
 

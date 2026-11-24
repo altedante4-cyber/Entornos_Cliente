@@ -1,5 +1,4 @@
 function Contador({ tareas }) {
-  // 💡 Reto: las completadas se calculan AQUÍ, no se reciben como prop
   const completadas = tareas.filter((tarea) => tarea.completada).length
 
   return (
