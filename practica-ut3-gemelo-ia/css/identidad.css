@@ -1,0 +1,22 @@
+:root {
+  --menta: #c5ebc3;
+  --salvia: #b7c8b5;
+  --malva: #a790a5;
+  --malva-oscuro: #875c74;
+  --ciruela: #392d39;
+  --fondo: #faf8f9;
+  --blanco: #fff;
+  --texto-suave: #665b65;
+  --titulos: "Fraunces", Georgia, serif;
+  --texto: "Inter", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ciruela); background: var(--fondo); font-family: var(--texto); line-height: 1.65; }
+h1, h2, h3 { margin: 0 0 1rem; font-family: var(--titulos); line-height: 1.12; }
+h1 { font-size: clamp(2.5rem, 5vw, 4.8rem); }
+h2 { font-size: clamp(2rem, 3.5vw, 3.1rem); }
+h3 { font-size: 1.45rem; }
+p { margin: 0 0 1rem; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }

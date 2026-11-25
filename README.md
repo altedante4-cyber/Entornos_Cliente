@@ -58,3 +58,14 @@ npm run preview  # sirve el build
 - React 19
 - Vite 8
 - CSS puro (sin frameworks)
+
+## Práctica UT3 · Gemelo IA
+
+Proyecto de diseño de interfaces web publicado con GitHub Pages.
+
+- **[Abrir Gemelo IA](https://altedante4-cyber.github.io/Entornos_Cliente/)**
+- [Carpeta completa del proyecto](practica-ut3-gemelo-ia/)
+- [Moodboard PDF](practica-ut3-gemelo-ia/materiales/moodboard.pdf)
+- [Kanban actualizado](practica-ut3-gemelo-ia/materiales/kanban-actualizado.md)
+- [Evidencias de validación W3C](practica-ut3-gemelo-ia/materiales/validacion-w3c.pdf)
+- [Créditos de imágenes](practica-ut3-gemelo-ia/materiales/creditos-imagenes.md) · [auditoría de optimización](practica-ut3-gemelo-ia/materiales/auditoria-imagenes.md)

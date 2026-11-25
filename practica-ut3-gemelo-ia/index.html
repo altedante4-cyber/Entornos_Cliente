@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gemelo IA organiza tu día con tus criterios y muestra las fuentes de cada resultado.">
+  <title>Gemelo IA | Tu copia digital con criterio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/identidad.css">
+  <link rel="stylesheet" href="css/estructura.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-inicio">
+  <header class="cabecera">
+    <a class="logo" href="index.html" aria-label="Gemelo IA, inicio">Gemelo<span>IA</span></a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a aria-current="page" href="index.html">Inicio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="boton boton-secundario" href="registro.html">Registro</a>
+  </header>
+
+  <main class="contenido">
+    <section class="portada" id="inicio" aria-labelledby="titulo-portada">
+      <div class="texto-portada">
+        <p class="etiqueta">Tu copia digital con criterio</p>
+        <h1 id="titulo-portada">Un gemelo de IA que piensa como tú y te muestra por qué</h1>
+        <p>Organiza tu agenda, filtra lo importante y resume tu trabajo con tus criterios. Cada dato llega con su fuente para que lo verifiques en segundos.</p>
+        <a class="boton boton-principal" href="registro.html">Crear mi gemelo</a>
+      </div>
+      <figure class="figura-portada">
+        <picture><source type="image/webp" srcset="imagenes/panel-gemelo-720.webp 720w, imagenes/panel-gemelo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 46vw"><img src="imagenes/panel-gemelo-720.svg" srcset="imagenes/panel-gemelo-720.svg 720w, imagenes/panel-gemelo-1200.svg 1200w" sizes="(max-width: 760px) 100vw, 46vw" alt="Vista ilustrada del panel del gemelo con resumen, agenda y fuentes verificables"></picture>
+        <figcaption>Tu día, organizado con sus fuentes.</figcaption>
+      </figure>
+    </section>
+
+    <section class="seccion pasos" id="como-funciona" aria-labelledby="titulo-pasos">
+      <div class="encabezado-seccion">
+        <p class="etiqueta">De la rutina al criterio</p>
+        <h2 id="titulo-pasos">Cómo funciona en tres pasos</h2>
+        <p>Tu gemelo aprende de ti, actúa por ti y te enseña su razonamiento.</p>
+      </div>
+      <div class="rejilla-pasos">
+        <article class="tarjeta-paso"><span class="numero">01</span><h3>Entrena a tu gemelo</h3><p>Conecta tus correos, agenda y documentos. Aprende tus prioridades, tu tono y tu forma de decidir.</p></article>
+        <article class="tarjeta-paso"><span class="numero">02</span><h3>Delega lo repetitivo</h3><p>Organiza citas, filtra mensajes y prepara resúmenes con tus criterios, sin ruido innecesario.</p></article>
+        <article class="tarjeta-paso"><span class="numero">03</span><h3>Verifica en segundos</h3><p>Cada resultado incluye su razonamiento y la fuente original. Puedes comprobarlo y corregirlo.</p></article>
+      </div>
+    </section>
+
+    <section class="seccion privacidad" aria-labelledby="titulo-privacidad">
+      <div>
+        <p class="etiqueta etiqueta-clara">Confianza verificable</p>
+        <h2 id="titulo-privacidad">Transparencia y privacidad</h2>
+        <p>Tú decides qué datos entrena tu gemelo. Cada resumen muestra el razonamiento y la fuente original.</p>
+        <a class="enlace-claro" href="privacidad.html">Conoce cómo protegemos tus datos</a>
+      </div>
+      <figure class="tarjeta-fuentes">
+        <img src="imagenes/fuentes.webp" alt="Ilustración de un resumen conectado a tres documentos fuente" width="480" height="320">
+        <figcaption><strong>Resumen:</strong> entrega el jueves a las 23:59.<br><span>Correo · Calendario · Guía de la actividad</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="seccion audio-seccion" aria-labelledby="titulo-audio">
+      <div><p class="etiqueta">Una pausa breve</p><h2 id="titulo-audio">Escucha el ritmo de tu día</h2><p>Una pequeña pieza sonora acompaña la experiencia del producto.</p></div>
+      <div class="reproductor"><div class="visualizador" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><audio controls preload="metadata"><source src="audio/pausa-gemelo.ogg" type="audio/ogg"><source src="audio/pausa-gemelo.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio></div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <a class="logo logo-pie" href="index.html">Gemelo<span>IA</span></a>
+    <nav class="navegacion-pie" aria-label="Enlaces del pie de página"><a href="privacidad.html">Privacidad</a><a href="aviso-legal.html">Aviso legal</a><a href="contacto.html">Contacto</a></nav>
+    <a class="sello-w3c" href="https://validator.w3.org/nu/" aria-label="HTML validado con el Nu HTML Checker de W3C"><strong>✓</strong> HTML válido · W3C</a>
+    <p>© 2026 Gemelo IA · Proyecto educativo</p>
+  </footer>
+</body>
+</html>
