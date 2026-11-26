@@ -1,0 +1,85 @@
+/* Estilos de la galería de imágenes de Inicio */
+
+.galeria {
+    width: min(1200px, 92%);
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background-color: #f8fafc;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.galeria__titulo {
+    margin: 0 0 1.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    color: #1e293b;
+    letter-spacing: 0.02em;
+}
+
+.galeria__titulo::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 0.6rem auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #6366f1, #ec4899);
+}
+
+.galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.galeria__tarjeta {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #e2e8f0;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria__tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.22);
+}
+
+.galeria__imagen {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    /* contain: muestra la imagen completa, sin recortar su fondo */
+    object-fit: contain;
+    background-color: #0f172a;
+    transition: filter 0.3s ease;
+}
+
+.galeria__tarjeta:hover .galeria__imagen {
+    filter: brightness(1.08);
+}
+
+.galeria__vacio {
+    grid-column: 1 / -1;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        padding: 1.25rem;
+        margin: 1.5rem auto;
+    }
+
+    .galeria__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

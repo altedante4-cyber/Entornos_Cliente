@@ -1,0 +1,51 @@
+/* Contenedor principal del footer */
+.site-footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contenedor de los enlaces */
+.social-links-container {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+/* Estilo base para cada enlace de icono */
+.social-icon-link {
+    color: #ffffff;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efecto hover general al pasar el mouse */
+.social-icon-link:hover {
+    transform: translateY(-3px);
+}
+
+/* Colores personalizados opcionales al pasar el mouse (hover) */
+.social-icon-link.github:hover {
+    color: #e6edf3;
+}
+
+.social-icon-link.linkedin:hover {
+    color: #0a66c2;
+}
+
+.social-icon-link.twitter:hover {
+    color: #1d9bf0;
+}
+
+.social-icon-link.instagram:hover {
+    color: #e4405f;
+}
+
+.social-icon-link.email:hover {
+    color: #ea4335;
+}

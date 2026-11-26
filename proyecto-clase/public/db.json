@@ -1,0 +1,12 @@
+{
+    "mensajes" :[
+            {"id" : 1 , "frases" :"https://i.pinimg.com/736x/e9/00/c6/e900c653b74a4c59c3faaf1f3215c1ab.jpg"}
+            ,{"id" : 2 , "frases" : "https://i.pinimg.com/736x/3c/68/52/3c685245ccd423f6a4d4d76c644452d1.jpg"}
+
+        ]
+,
+    "rutinasemanal" : [
+            {"dia":1 ,"toca" :"pecho,espalda"}
+    ]
+
+}
